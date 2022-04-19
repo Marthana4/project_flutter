@@ -30,7 +30,10 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           // The title text which will be shown on the action bar
-          title: Text(title),
+          title: Text(
+            title,
+            style: TextStyle(fontSize: 30, color: Colors.lightBlue),
+          ),
           backgroundColor: Colors.white,
         ),
         // body: SingleChildScrollView(
