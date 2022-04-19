@@ -32,7 +32,7 @@ class MyHomePage extends StatelessWidget {
           // The title text which will be shown on the action bar
           title: Text(
             title,
-            style: TextStyle(fontSize: 30, color: Colors.lightBlue[600]),
+            style: TextStyle(fontSize: 20, color: Colors.lightBlue[600]),
           ),
           backgroundColor: Colors.white,
         ),
@@ -116,7 +116,10 @@ class MyHomePage extends StatelessWidget {
                       color: Colors.blueGrey[50],
                       child: ListTile(
                         onTap: () {},
-                        leading: Image.network("https://i.pinimg.com/564x/db/cf/d2/dbcfd2339d49184384eedc0c019113dc.jpg"),
+                        leading: Image.network(
+                          "https://i.pinimg.com/564x/db/cf/d2/dbcfd2339d49184384eedc0c019113dc.jpg",
+                          height: 150,
+                        ),
                         title: const Text(
                           "Bag",
                           overflow: TextOverflow.ellipsis,
