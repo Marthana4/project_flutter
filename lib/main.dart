@@ -31,9 +31,9 @@ class MyHomePage extends StatelessWidget {
         appBar: AppBar(
           // The title text which will be shown on the action bar
           title: Text(
+            textAlign: TextAlign.center,
             title,
             style: TextStyle(fontSize: 20, color: Colors.lightBlue),
-            textAlign: TextAlign.center,
           ),
           backgroundColor: Colors.white,
         ),
