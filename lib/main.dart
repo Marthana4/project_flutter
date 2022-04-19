@@ -112,7 +112,7 @@ class MyHomePage extends StatelessWidget {
                   ),
                   child: Card(
                     child: Container(
-                      height: 150,
+                      height: 120,
                       color: Colors.blueGrey[50],
                       child: ListTile(
                         onTap: () {},
