@@ -118,7 +118,7 @@ class MyHomePage extends StatelessWidget {
                         onTap: () {},
                         leading: Image.network(
                           "https://i.pinimg.com/564x/db/cf/d2/dbcfd2339d49184384eedc0c019113dc.jpg",
-                          width: 200.0,
+                          height: 200.0,
                         ),
                         title: const Text(
                           "Bag",
