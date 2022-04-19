@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -33,7 +34,7 @@ class MyHomePage extends StatelessWidget {
           title: Text(
             title,
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 20, color: Colors.lightBlue[600]),
+            style: GoogleFonts.dancingScriptTextStyle(fontSize: 20, color: Colors.lightBlue[600]),
           ),
           backgroundColor: Colors.white,
         ),
