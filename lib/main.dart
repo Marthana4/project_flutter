@@ -110,17 +110,25 @@ class MyHomePage extends StatelessWidget {
                   padding: const EdgeInsets.only(
                     top: 30,
                   ),
-                  child: ListTile(
-                      leading: Image.network("https://i.pinimg.com/564x/79/d2/9c/79d29ce12a68a25d6849e13208cb62e7.jpg"),
-                      title: const Text(
-                        "Bag",
-                        overflow: TextOverflow.ellipsis,
+                  child: Card(
+                    child: Container(
+                      height: 100,
+                      color: Colors.blueGrey[50],
+                      child: ListTile(
+                        onTap: () {},
+                        leading: Image.network("https://i.pinimg.com/564x/79/d2/9c/79d29ce12a68a25d6849e13208cb62e7.jpg"),
+                        title: const Text(
+                          "Bag",
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        subtitle: const Text(
+                          "Women's bag with decorative pearl",
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ),
-                      subtitle: const Text(
-                        "Women's bag with decorative pearl",
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                      )));
+                    ),
+                  ));
             }));
   }
 }
