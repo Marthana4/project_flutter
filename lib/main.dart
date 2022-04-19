@@ -39,7 +39,7 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
           ),
-          iconTheme: IconThemeData(color: Colors.black),
+          iconTheme: IconThemeData(color: Colors.lightBlue[600]),
         ),
         // body: SingleChildScrollView(
         //   child: Column(
