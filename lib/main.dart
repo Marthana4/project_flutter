@@ -119,47 +119,47 @@ class MyHomePage extends StatelessWidget {
                       height: 120,
                       color: Colors.blueGrey[50],
                       // children:[
-                        ListTile(
-                          onTap: () {},
-                          leading: SizedBox(
-                              height: 200.0,
-                              width: 100.0, // fixed width and height
-                              child: Image.asset("assets/images/tas1.jpg")),
-                          title: const Text(
-                            "Brand New Bag",
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                          subtitle: const Text(
-                            "Women's bag with decorative pearl",
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                          trailing: IconButton(
-                            icon: Icon(Icons.delete),
-                            color: Theme.of(context).errorColor,
-                            onPressed: () {},
-                          ),
+                      child: ListTile(
+                        onTap: () {},
+                        leading: SizedBox(
+                            height: 200.0,
+                            width: 100.0, // fixed width and height
+                            child: Image.asset("assets/images/tas1.jpg")),
+                        title: const Text(
+                          "Brand New Bag",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                          overflow: TextOverflow.ellipsis,
                         ),
-                  //       Container(
-                  // width: 200,
-                  // height: 45,
-                  // child: TextButton(
-                  //   style: TextButton.styleFrom(
-                  //     backgroundColor: Color(0xffF18265),
-                  //     shape: RoundedRectangleBorder(
-                  //       borderRadius: BorderRadius.circular(20),
-                  //     ),
-                  //   ),
-                  //   onPressed: () {},
-                  //   child: Text(
-                  //     "Let's take a picture",
-                  //     style: TextStyle(
-                  //       color: Color(0xffffffff),
-                  //     ),
-                  //   ),
-                  // ),
-                // ),
+                        subtitle: const Text(
+                          "Women's bag with decorative pearl",
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        trailing: IconButton(
+                          icon: Icon(Icons.delete),
+                          color: Theme.of(context).errorColor,
+                          onPressed: () {},
+                        ),
+                      ),
+                      //       Container(
+                      // width: 200,
+                      // height: 45,
+                      // child: TextButton(
+                      //   style: TextButton.styleFrom(
+                      //     backgroundColor: Color(0xffF18265),
+                      //     shape: RoundedRectangleBorder(
+                      //       borderRadius: BorderRadius.circular(20),
+                      //     ),
+                      //   ),
+                      //   onPressed: () {},
+                      //   child: Text(
+                      //     "Let's take a picture",
+                      //     style: TextStyle(
+                      //       color: Color(0xffffffff),
+                      //     ),
+                      //   ),
+                      // ),
+                      // ),
                       // ],
                     ),
                   ));
