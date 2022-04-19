@@ -119,7 +119,7 @@ class MyHomePage extends StatelessWidget {
                         leading: SizedBox(
                             height: 200.0,
                             width: 100.0, // fixed width and height
-                            child: Image.asset("assets/images/tas.jpg")),
+                            child: Image.asset("assets/images/tas1.jpg")),
                         title: const Text(
                           "Bag",
                           overflow: TextOverflow.ellipsis,
