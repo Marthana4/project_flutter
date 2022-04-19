@@ -35,7 +35,7 @@ class MyHomePage extends StatelessWidget {
             child: Center(
               child: Text(
                 title,
-                style: TextStyle(fontSize: 20, color: Colors.lightBlue[600]),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.lightBlue[600]),
               ),
             ),
           ),
@@ -126,6 +126,7 @@ class MyHomePage extends StatelessWidget {
                             child: Image.asset("assets/images/tas1.jpg")),
                         title: const Text(
                           "Brand New Bag",
+                          style: TextStyle(fontWeight: FontWeight.bold),
                           overflow: TextOverflow.ellipsis,
                         ),
                         subtitle: const Text(
@@ -133,7 +134,11 @@ class MyHomePage extends StatelessWidget {
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                         ),
-                        trailing: Icon(Icons.delete),
+                        trailing: IconButton(
+                          icon: Icon(Icons.delete),
+                          color: Theme.of(context).errorColor,
+                          onPressed: () {},
+                        ),
                       ),
                     ),
                   ));
