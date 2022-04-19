@@ -118,28 +118,45 @@ class MyHomePage extends StatelessWidget {
                     child: Container(
                       height: 120,
                       color: Colors.blueGrey[50],
-                      child: ListTile(
-                        onTap: () {},
-                        leading: SizedBox(
-                            height: 200.0,
-                            width: 100.0, // fixed width and height
-                            child: Image.asset("assets/images/tas1.jpg")),
-                        title: const Text(
-                          "Brand New Bag",
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                          overflow: TextOverflow.ellipsis,
+                      children: <Widget>[
+                        ListTile(
+                          onTap: () {},
+                          leading: SizedBox(
+                              height: 200.0,
+                              width: 100.0, // fixed width and height
+                              child: Image.asset("assets/images/tas1.jpg")),
+                          title: const Text(
+                            "Brand New Bag",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          subtitle: const Text(
+                            "Women's bag with decorative pearl",
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          trailing: IconButton(
+                            icon: Icon(Icons.delete),
+                            color: Theme.of(context).errorColor,
+                            onPressed: () {},
+                          ),
                         ),
-                        subtitle: const Text(
-                          "Women's bag with decorative pearl",
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                        trailing: IconButton(
-                          icon: Icon(Icons.delete),
-                          color: Theme.of(context).errorColor,
+                        TextButton(
+                          style: TextButton.styleFrom(
+                            backgroundColor: Color(0xffF18265),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
                           onPressed: () {},
+                          child: Text(
+                            "Let's take a picture",
+                            style: TextStyle(
+                              color: Color(0xffffffff),
+                            ),
+                          ),
                         ),
-                      ),
+                      ],
                     ),
                   ));
             }));
