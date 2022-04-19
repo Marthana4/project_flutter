@@ -108,7 +108,7 @@ class MyHomePage extends StatelessWidget {
             itemBuilder: (context, index) {
               return Padding(
                   padding: const EdgeInsets.only(
-                    top: 10,
+                    top: 20,
                   ),
                   child: Card(
                     child: Container(
