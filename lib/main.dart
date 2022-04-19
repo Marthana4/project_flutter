@@ -29,6 +29,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          iconTheme: IconThemeData(color: Colors.black),
           flexibleSpace: Container(
             color: Colors.white,
             // The title text which will be shown on the action bar
