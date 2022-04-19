@@ -28,13 +28,16 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          // The title text which will be shown on the action bar
-          title: Text(
-            title,
-            style: TextStyle(fontSize: 20, color: Colors.lightBlue[600]),
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(120),
+          child: Container(
+            color: Colors.white,
+            // The title text which will be shown on the action bar
+            child: Text(
+              title,
+              style: TextStyle(fontSize: 20, color: Colors.lightBlue[600]),
+            ),
           ),
-          backgroundColor: Colors.white,
         ),
         // body: SingleChildScrollView(
         //   child: Column(
@@ -121,7 +124,7 @@ class MyHomePage extends StatelessWidget {
                             width: 100.0, // fixed width and height
                             child: Image.asset("assets/images/tas1.jpg")),
                         title: const Text(
-                          "Bag",
+                          "Brand New Bag",
                           overflow: TextOverflow.ellipsis,
                         ),
                         subtitle: const Text(
