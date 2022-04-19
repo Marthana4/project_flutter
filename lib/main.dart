@@ -133,7 +133,7 @@ class MyHomePage extends StatelessWidget {
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                         ),
-                        trailing: Icon(Icons.flight),
+                        trailing: Icon(Icons.delete),
                       ),
                     ),
                   ));
