@@ -32,7 +32,7 @@ class MyHomePage extends StatelessWidget {
           // The title text which will be shown on the action bar
           title: Text(
             title,
-            style: TextStyle(fontSize: 30, color: Colors.lightBlue),
+            style: TextStyle(fontSize: 20, color: Colors.lightBlue),
           ),
           backgroundColor: Colors.white,
         ),
