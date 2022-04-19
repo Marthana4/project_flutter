@@ -28,14 +28,15 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: PreferredSize(
-          preferredSize: Size.fromHeight(120),
-          child: Container(
+        appBar: AppBar(
+          flexibleSpace: Container(
             color: Colors.white,
             // The title text which will be shown on the action bar
-            child: Text(
-              title,
-              style: TextStyle(fontSize: 20, color: Colors.lightBlue[600]),
+            child: Center(
+              child: Text(
+                title,
+                style: TextStyle(fontSize: 20, color: Colors.lightBlue[600]),
+              ),
             ),
           ),
         ),
