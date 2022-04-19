@@ -116,10 +116,7 @@ class MyHomePage extends StatelessWidget {
                       color: Colors.blueGrey[50],
                       child: ListTile(
                         onTap: () {},
-                        leading: Image.network(
-                          "https://i.pinimg.com/564x/db/cf/d2/dbcfd2339d49184384eedc0c019113dc.jpg",
-                          height: 200.0,
-                        ),
+                        leading: Image.network("https://i.pinimg.com/564x/db/cf/d2/dbcfd2339d49184384eedc0c019113dc.jpg", width: 100.0),
                         title: const Text(
                           "Bag",
                           overflow: TextOverflow.ellipsis,
