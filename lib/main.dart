@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       //   primarySwatch: Colors.grey,
       // ),
       // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter first project'),
+      home: MyHomePage(title: 'PRODUCTS'),
     );
   }
 }
