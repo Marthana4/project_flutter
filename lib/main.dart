@@ -33,7 +33,7 @@ class MyHomePage extends StatelessWidget {
           title: Text(
             title,
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 20, color: Colors.lightBlue[900]),
+            style: TextStyle(fontSize: 20, color: Colors.lightBlue[600]),
           ),
           backgroundColor: Colors.white,
         ),
