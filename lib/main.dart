@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Hello World',
       // Application theme data, you can set the colors for the application as
       // you want
-      theme: ThemeData(
-        primarySwatch: Colors.grey,
-      ),
+      // theme: ThemeData(
+      //   primarySwatch: Colors.grey,
+      // ),
       // A widget which will be started on application startup
       home: MyHomePage(title: 'Flutter first project'),
     );
@@ -31,6 +31,7 @@ class MyHomePage extends StatelessWidget {
         appBar: AppBar(
           // The title text which will be shown on the action bar
           title: Text(title),
+          backgroundColor: Colors.white,
         ),
         // body: SingleChildScrollView(
         //   child: Column(
