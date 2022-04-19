@@ -28,77 +28,95 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Padding(
-              padding: EdgeInsets.all(18.0),
-              child: Container(
-                margin: EdgeInsets.all(20.0),
-                width: double.infinity,
-                height: 200,
-                decoration: BoxDecoration(
-                  color: Colors.deepPurpleAccent,
-                  border: Border.all(),
-                ),
-                child: Align(
-                  alignment: Alignment.center,
-                  child: Text('Hello, Diva', style: TextStyle(fontSize: 30, color: Colors.white)),
-                ),
-              ),
-            ),
-            Center(
-              child: IntrinsicWidth(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: <Widget>[
-                    RaisedButton(
-                      onPressed: () {},
-                      child: Text('Tombol Pendek'),
-                    ),
-                    RaisedButton(
-                      onPressed: () {},
-                      child: Text('Tombol Lebih Panjang'),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Row(
-              children: <Widget>[
-                Expanded(
-                  child: Icon(
-                    Icons.home,
-                    size: 70,
-                  ),
-                ),
-                Expanded(
-                  child: Icon(
-                    Icons.home,
-                    size: 70,
-                  ),
-                ),
-                Expanded(
-                  child: Icon(
-                    Icons.home,
-                    size: 70,
-                  ),
-                ),
-                Expanded(
-                  child: Icon(
-                    Icons.home,
-                    size: 70,
-                  ),
-                ),
-              ],
-            ),
-          ],
+        appBar: AppBar(
+          // The title text which will be shown on the action bar
+          title: Text(title),
         ),
-      ),
-    );
+        // body: SingleChildScrollView(
+        //   child: Column(
+        //     children: [
+        //       Padding(
+        //         padding: EdgeInsets.all(18.0),
+        //         child: Container(
+        //           margin: EdgeInsets.all(20.0),
+        //           width: double.infinity,
+        //           height: 200,
+        //           decoration: BoxDecoration(
+        //             color: Colors.deepPurpleAccent,
+        //             border: Border.all(),
+        //           ),
+        //           child: Align(
+        //             alignment: Alignment.center,
+        //             child: Text('Hello, Diva', style: TextStyle(fontSize: 30, color: Colors.white)),
+        //           ),
+        //         ),
+        //       ),
+        //       Center(
+        //         child: IntrinsicWidth(
+        //           child: Column(
+        //             crossAxisAlignment: CrossAxisAlignment.stretch,
+        //             children: <Widget>[
+        //               RaisedButton(
+        //                 onPressed: () {},
+        //                 child: Text('Tombol Pendek'),
+        //               ),
+        //               RaisedButton(
+        //                 onPressed: () {},
+        //                 child: Text('Tombol Lebih Panjang'),
+        //               ),
+        //             ],
+        //           ),
+        //         ),
+        //       ),
+        //       Row(
+        //         children: <Widget>[
+        //           Expanded(
+        //             child: Icon(
+        //               Icons.home,
+        //               size: 70,
+        //             ),
+        //           ),
+        //           Expanded(
+        //             child: Icon(
+        //               Icons.home,
+        //               size: 70,
+        //             ),
+        //           ),
+        //           Expanded(
+        //             child: Icon(
+        //               Icons.home,
+        //               size: 70,
+        //             ),
+        //           ),
+        //           Expanded(
+        //             child: Icon(
+        //               Icons.home,
+        //               size: 70,
+        //             ),
+        //           ),
+        //         ],
+        //       ),
+        //     ],
+        //   ),
+        // ),
+        body: ListView.builder(
+            itemCount: 3,
+            itemBuilder: (context, index) {
+              return Padding(
+                  padding: const EdgeInsets.only(
+                    top: 20,
+                  ),
+                  child: ListTile(
+                      leading: Image.network("https://i.pinimg.com/564x/79/d2/9c/79d29ce12a68a25d6849e13208cb62e7.jpg"),
+                      title: const Text(
+                        "Bag",
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      subtitle: const Text(
+                        "Women's bag with decorative pearl",
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      )));
+            }));
   }
 }
