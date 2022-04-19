@@ -108,11 +108,11 @@ class MyHomePage extends StatelessWidget {
         //   ),
         // ),
         body: ListView.builder(
-            itemCount: 20,
+            itemCount: 3,
             itemBuilder: (context, index) {
               return Padding(
                   padding: const EdgeInsets.only(
-                    top: 3,
+                    top: 20,
                   ),
                   child: Card(
                     child: Container(
