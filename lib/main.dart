@@ -112,13 +112,13 @@ class MyHomePage extends StatelessWidget {
             itemBuilder: (context, index) {
               return Padding(
                   padding: const EdgeInsets.only(
-                    top: 20,
+                    top: 3,
                   ),
                   child: Card(
                     child: Container(
                       height: 120,
                       color: Colors.blueGrey[50],
-                      children: <Widget>[
+                      // children:[
                         ListTile(
                           onTap: () {},
                           leading: SizedBox(
@@ -141,22 +141,26 @@ class MyHomePage extends StatelessWidget {
                             onPressed: () {},
                           ),
                         ),
-                        TextButton(
-                          style: TextButton.styleFrom(
-                            backgroundColor: Color(0xffF18265),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                          ),
-                          onPressed: () {},
-                          child: Text(
-                            "Let's take a picture",
-                            style: TextStyle(
-                              color: Color(0xffffffff),
-                            ),
-                          ),
-                        ),
-                      ],
+                  //       Container(
+                  // width: 200,
+                  // height: 45,
+                  // child: TextButton(
+                  //   style: TextButton.styleFrom(
+                  //     backgroundColor: Color(0xffF18265),
+                  //     shape: RoundedRectangleBorder(
+                  //       borderRadius: BorderRadius.circular(20),
+                  //     ),
+                  //   ),
+                  //   onPressed: () {},
+                  //   child: Text(
+                  //     "Let's take a picture",
+                  //     style: TextStyle(
+                  //       color: Color(0xffffffff),
+                  //     ),
+                  //   ),
+                  // ),
+                // ),
+                      // ],
                     ),
                   ));
             }));
