@@ -32,8 +32,7 @@ class MyHomePage extends StatelessWidget {
           // The title text which will be shown on the action bar
           title: Text(
             title,
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 20, color: Colors.lightBlue[600]),
+            style: TextStyle(fontSize: 30, color: Colors.lightBlue[600]),
           ),
           backgroundColor: Colors.white,
         ),
@@ -109,7 +108,7 @@ class MyHomePage extends StatelessWidget {
             itemBuilder: (context, index) {
               return Padding(
                   padding: const EdgeInsets.only(
-                    top: 20,
+                    top: 30,
                   ),
                   child: ListTile(
                       leading: Image.network("https://i.pinimg.com/564x/79/d2/9c/79d29ce12a68a25d6849e13208cb62e7.jpg"),
